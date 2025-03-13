@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soy Nuevo - Oasis Family Church</title>
+<meta name="description" content="Bienvenido a Oasis Family Church. Información para nuevos visitantes.">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="favicon.png">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- AOS Animation Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="styles.css">
+
+<!-- Supabase JS -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+<!-- Preloader -->
+<div class="preloader">
+    <div class="loader"></div>
+</div>
+
+<!-- Header -->
+<header id="header">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="oasis_logo_website.jpg" alt="Oasis Family Church Logo">
+            </a>
+        </div>
+        
+        <nav>
+            <ul class="nav-menu">
+                <!-- Eliminados los enlaces "Inicio" y "Nosotros" -->
+                <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                <li><a href="eventos.html" class="nav-link">Eventos</a></li>
+                <li><a href="conecta.html" class="nav-link">Conecta</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                <li class="nav-cta"><a href="nuevo-visitante.html" class="btn-primary active">Soy Nuevo</a></li>
+            </ul>
+            
+            <div class="mobile-nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Page Header -->
+<section class="page-header">
+    <div class="page-header-overlay"></div>
+    <div class="container">
+        <div class="page-header-content">
+            <h1>Bienvenido a Oasis Family Church</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <!-- Mantenemos este enlace para la navegación de migas de pan -->
+                    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Soy Nuevo</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<!-- New Visitor Section -->
+<section class="visitor section-padding">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-subtitle">Bienvenido</span>
+            <h2 class="section-title">Información para Nuevos Visitantes</h2>
+            <div class="section-divider"></div>
+            <p class="section-description">Estamos emocionados de que estés considerando visitarnos</p>
+        </div>
+        
+        <div class="visitor-content">
+            <div class="visitor-info" data-aos="fade-right" data-aos-delay="200">
+                <div class="visitor-tabs">
+                    <button class="visitor-tab active" data-tab="tab1">Qué Esperar</button>
+                    <button class="visitor-tab" data-tab="tab2">Preguntas Frecuentes</button>
+                    <button class="visitor-tab" data-tab="tab3">Próximos Pasos</button>
+                </div>
+                
+                <div id="tab1" class="visitor-tab-content active">
+                    <h3>Qué Esperar en tu Primera Visita</h3>
+                    <p>Sabemos que visitar una iglesia por primera vez puede ser intimidante. Aquí hay un vistazo a lo que puedes esperar cuando nos visites:</p>
+                    
+                    <div class="visitor-steps">
+                        <div class="visitor-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Bienvenida Cálida</h4>
+                                <p>Nuestro equipo de bienvenida estará listo para recibirte, responder tus preguntas y ayudarte a encontrar tu camino.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="visitor-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Adoración Vibrante</h4>
+                                <p>Experimentarás música contemporánea y adoración auténtica que te ayudará a conectar con Dios de una manera significativa.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="visitor-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Mensaje Relevante</h4>
+                                <p>Escucharás un mensaje bíblico práctico y aplicable a tu vida diaria.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="visitor-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Programas para Niños</h4>
+                                <p>Ofrecemos un ministerio de niños seguro y divertido donde tus hijos aprenderán sobre Dios de manera apropiada para su edad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="tab2" class="visitor-tab-content">
+                    <h3>Preguntas Frecuentes</h3>
+                    <div class="visitor-accordion">
+                        <div class="accordion-item active">
+                            <div class="accordion-header">
+                                <h4>¿Cómo debo vestirme?</h4>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <p>No hay un código de vestimenta específico. Algunas personas vienen con ropa casual, mientras que otras prefieren vestirse más formalmente. Lo importante es que te sientas cómodo.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h4>¿Cuánto dura el servicio?</h4>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Nuestros servicios dominicales duran aproximadamente 90 minutos, incluyendo adoración, anuncios y el mensaje.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h4>¿Qué ofrecen para mis hijos?</h4>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Tenemos programas para niños de todas las edades, desde guardería hasta adolescentes. Todos nuestros voluntarios pasan por un proceso de verificación de antecedentes.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h4>¿Tendré que hablar o presentarme?</h4>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <p>No, no te pediremos que te pongas de pie o te presentes. Puedes participar tanto o tan poco como te sientas cómodo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="tab3" class="visitor-tab-content">
+                    <h3>Próximos Pasos</h3>
+                    <p>Después de tu primera visita, te animamos a considerar estos próximos pasos para conectarte más profundamente con nuestra comunidad:</p>
+                    
+                    <ul class="visitor-list">
+                        <li><i class="fas fa-check-circle"></i> Asiste a nuestra clase "Bienvenido a Oasis" para conocer más sobre nuestra iglesia</li>
+                        <li><i class="fas fa-check-circle"></i> Únete a un grupo pequeño para conectar con otros y crecer en tu fe</li>
+                        <li><i class="fas fa-check-circle"></i> Descubre tus dones y talentos a través de nuestro curso "Descubre tu Propósito"</li>
+                        <li><i class="fas fa-check-circle"></i> Encuentra un lugar para servir y hacer una diferencia en nuestra comunidad</li>
+                    </ul>
+                    
+                    <p>Estamos aquí para ayudarte en cada paso de tu camino espiritual.</p>
+                </div>
+            </div>
+            
+            <div class="visitor-form" data-aos="fade-left" data-aos-delay="300">
+                <div class="form-header">
+                    <h3>Conéctate con Nosotros</h3>
+                    <p>Nos encantaría conocerte mejor y ayudarte a conectar con nuestra comunidad.</p>
+                </div>
+                
+                <form id="newVisitorForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">Nombre</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName">Apellido</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>¿Cómo te gustaría que nos comuniquemos contigo?</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox">
+                                <input type="checkbox" name="contactMethod" value="email">
+                                <span class="checkmark"></span>
+                                Correo Electrónico
+                            </label>
+                            
+                            <label class="checkbox">
+                                <input type="checkbox" name="contactMethod" value="phone">
+                                <span class="checkmark"></span>
+                                Teléfono
+                            </label>
+                            
+                            <label class="checkbox">
+                                <input type="checkbox" name="contactMethod" value="text">
+                                <span class="checkmark"></span>
+                                Mensaje de Texto
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Estoy interesado en:</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox">
+                                <input type="checkbox" name="interests" value="worship">
+                                <span class="checkmark"></span>
+                                Servicios de Adoración
+                            </label>
+                            
+                            <label class="checkbox">
+                                <input type="checkbox" name="interests" value="smallGroups">
+                                <span class="checkmark"></span>
+                                Grupos Pequeños
+                            </label>
+                            
+                            <label class="checkbox">
+                                <input type="checkbox" name="interests" value="children">
+                                <span class="checkmark"></span>
+                                Ministerio de Niños
+                            </label>
+                            
+                            <label class="checkbox">
+                                <input type="checkbox" name="interests" value="youth">
+                                <span class="checkmark"></span>
+                                Ministerio de Jóvenes
+                            </label>
+                            
+                            <label class="checkbox">
+                                <input type="checkbox" name="interests" value="volunteer">
+                                <span class="checkmark"></span>
+                                Oportunidades de Servicio
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Preguntas o Comentarios</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary btn-block" id="submitButton">
+                        <i class="fas fa-paper-plane"></i> Enviar
+                    </button>
+                    
+                    <!-- Mensaje de éxito (inicialmente oculto) -->
+                    <div id="formSuccess" style="display: none;" class="form-success">
+                        <div class="success-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <h3>¡Gracias por conectarte con nosotros!</h3>
+                        <p>Hemos recibido tu información y nos pondremos en contacto contigo pronto.</p>
+                    </div>
+                    
+                    <!-- Mensaje de error (inicialmente oculto) -->
+                    <div id="formError" style="display: none; color: red; margin-top: 15px; text-align: center;">
+                        Hubo un error al enviar el formulario. Por favor intenta de nuevo.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="oasis_logo_website.jpg" alt="Oasis Family Church Logo">
+                    </div>
+                    <p>Oasis Family Church es un lugar de esperanza, sanidad y comunidad donde puedes experimentar el amor de Dios y crecer en tu fe.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <!-- También eliminamos los enlaces del footer para mantener consistencia -->
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="conecta.html">Conecta</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="nuevo-visitante.html">Soy Nuevo</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Ministerios</h3>
+                    <ul>
+                        <li><a href="#">Niños</a></li>
+                        <li><a href="#">Jóvenes</a></li>
+                        <li><a href="#">Adultos</a></li>
+                        <li><a href="#">Matrimonios</a></li>
+                        <li><a href="#">Misiones</a></li>
+                        <li><a href="#">Adoración</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Keystone Ln, Berryville, VA 22611</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>(555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@oasisfamilychurch.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Lun - Vie: 9:00 AM - 5:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; 2025 Oasis Family Church. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+</footer>
+
+<!-- AOS Animation Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!-- Custom JS -->
+<script src="script.js"></script>
+
+<!-- Supabase y manejo del formulario -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Inicializar Supabase
+        const supabaseUrl = 'https://ugrhhftzmtvdgtlwkqik.supabase.co'; // URL actualizada
+        const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVncmhoZnR6bXR2ZGd0bHdrcWlrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDE4MzQ3MzcsImV4cCI6MjA1NzQxMDczN30.ngarmbnJIp5jCAg6sSw7DRgoy6UhEqm85tlgijElpLo'; // Clave actualizada
+        const supabaseClient = supabase.createClient(supabaseUrl, supabaseKey);
+        
+        // Manejar el envío del formulario
+        const formulario = document.getElementById('newVisitorForm');
+        const mensajeExito = document.getElementById('formSuccess');
+        const mensajeError = document.getElementById('formError');
+        
+        if (formulario) {
+            formulario.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                // Mostrar estado de carga
+                const submitButton = document.getElementById('submitButton');
+                const originalButtonText = submitButton.innerHTML;
+                submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+                submitButton.disabled = true;
+                
+                // Ocultar mensajes previos
+                mensajeExito.style.display = 'none';
+                mensajeError.style.display = 'none';
+                
+                try {
+                    // Recopilar datos del formulario
+                    const firstName = document.getElementById('firstName').value;
+                    const lastName = document.getElementById('lastName').value;
+                    const email = document.getElementById('email').value;
+                    const phone = document.getElementById('phone').value;
+                    
+                    // Recopilar métodos de contacto seleccionados
+                    const contactMethods = Array.from(document.querySelectorAll('input[name="contactMethod"]:checked')).map(el => el.value);
+                    const contactEmail = contactMethods.includes('email');
+                    const contactPhone = contactMethods.includes('phone');
+                    const contactText = contactMethods.includes('text');
+                    
+                    // Recopilar intereses seleccionados
+                    const interests = Array.from(document.querySelectorAll('input[name="interests"]:checked')).map(el => el.value);
+                    
+                    const message = document.getElementById('message').value;
+                    
+                    // Enviar datos a Supabase
+                    const { data, error } = await supabaseClient
+                        .from('visitantes')
+                        .insert([
+                            {
+                                nombre: firstName,
+                                apellido: lastName,
+                                email: email,
+                                telefono: phone,
+                                contacto_email: contactEmail,
+                                contacto_telefono: contactPhone,
+                                contacto_texto: contactText,
+                                intereses: interests,
+                                mensaje: message
+                            }
+                        ]);
+                    
+                    if (error) throw error;
+                    
+                    // Mostrar mensaje de éxito
+                    mensajeExito.style.display = 'block';
+                    
+                    // Limpiar formulario
+                    formulario.reset();
+                    
+                } catch (error) {
+                    console.error('Error:', error);
+                    mensajeError.style.display = 'block';
+                } finally {
+                    // Restaurar botón
+                    submitButton.innerHTML = originalButtonText;
+                    submitButton.disabled = false;
+                }
+            });
+        }
+    });
+</script>
+</body>
+</html>
