@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Close mobile menu when clicking on a nav link
-    const navLinks = document.querySelectorAll('.nav-link');
+    const navLinks = document.querySelectorAll('.nav-link, .nav-cta a');
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
             if (navMenu.classList.contains('active')) {
@@ -49,9 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
-    // Eliminar la funcionalidad de Active Navigation on Scroll que podría estar causando el problema
-    // Esto evitará que se agregue el "1." antes de "Inicio"
     
     // Back to Top Button
     const backToTopButton = document.querySelector('.back-to-top');
@@ -373,10 +370,8 @@ document.addEventListener('DOMContentLoaded', function() {
         form.appendChild(successMessage);
     }
     
-    // Eliminar el botón "1.Inicio" que aparece en cada categoría
-    // Buscar y corregir todos los enlaces de navegación
+    // Corregir los enlaces de navegación - eliminar el "1." que aparece antes de "Inicio"
     document.addEventListener('DOMContentLoaded', function() {
-        // Corregir los enlaces de navegación
         const breadcrumbLinks = document.querySelectorAll('.breadcrumb-item a');
         breadcrumbLinks.forEach(link => {
             if (link.textContent.includes('1.Inicio')) {
