@@ -4,231 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Oasis Family Church</title>
-    <meta name="description" content="Ponte en contacto con Oasis Family Church. Estamos aquí para ayudarte.">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- AOS Animation Library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="loader"></div>
-    </div>
-
-    <!-- Header -->
-    <header id="header">
+    <!-- Navegación -->
+    <header class="header">
         <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="oasis_logo_website.jpg" alt="Oasis Family Church Logo">
-                </a>
-            </div>
-            
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">Inicio</a></li>
-                    <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
-                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
-                    <li><a href="eventos.html" class="nav-link">Eventos</a></li>
-                    <li><a href="conecta.html" class="nav-link">Conecta</a></li>
-                    <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
-                    <li class="nav-cta"><a href="nuevo-visitante.html" class="btn-primary">Soy Nuevo</a></li>
-                </ul>
-                
-                <div class="mobile-nav-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">Oasis Family Church</a>
                 </div>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="page-header-overlay"></div>
-        <div class="container">
-            <div class="page-header-content">
-                <h1>Contacto</h1>
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Contacto</li>
-                    </ol>
+                <div class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav class="nav-menu" id="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfGoFW0Za8zg1ouMelwI6BVl6x2eyvFBe6a7uT-ThBmHmTznQ/viewform?usp=sharing" target="_blank" class="btn-primary">  target="_blank" class="btn-primary">Soy Nuevo</a></li>
+                    </ul>
                 </nav>
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- Contact Section -->
-    <section class="contact section-padding">
+    <!-- Título de la página -->
+    <section class="page-title">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-subtitle">Contáctanos</span>
-                <h2 class="section-title">Estamos Aquí Para Ti</h2>
-                <div class="section-divider"></div>
-                <p class="section-description">Ponte en contacto con nosotros para cualquier pregunta o necesidad</p>
-            </div>
-            
-            <div class="contact-content">
-                <div class="contact-info" data-aos="fade-up" data-aos-delay="100">
-                    <div class="contact-card">
-                        <div class="contact-card-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <h3>Dirección</h3>
-                        <p>Keystone Ln, Berryville, VA 22611</p>
-                    </div>
-                    
-                    <div class="contact-card">
-                        <div class="contact-card-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <h3>Teléfono</h3>
-                        <p>(555) 123-4567</p>
-                    </div>
-                    
-                    <div class="contact-card">
-                        <div class="contact-card-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <h3>Email</h3>
-                        <p>info@oasisfamilychurch.com</p>
-                    </div>
-                    
-                    <div class="contact-card">
-                        <div class="contact-card-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <h3>Horario de Oficina</h3>
-                        <p>Lun - Vie: 9:00 AM - 5:00 PM</p>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="#" class="social-link" title="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-link" title="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="social-link" title="YouTube">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <a href="#" class="social-link" title="Twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="contact-map" data-aos="fade-up" data-aos-delay="200">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3097.5321326007727!2d-77.98440548464716!3d39.09983997954095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b5f2e02c025c37%3A0x4a6e8a31d5c4cde7!2sKeystone%20Ln%2C%20Berryville%2C%20VA%2022611%2C%20USA!5e0!3m2!1sen!2s!4v1615393430789!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
+            <h1>Contáctanos</h1>
         </div>
     </section>
 
-    <!-- Contact Form Section -->
-    <section class="contact-form section-padding section-bg">
+    <!-- Contacto -->
+    <section class="contact-page section">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-subtitle">Mensaje</span>
-                <h2 class="section-title">Envíanos un Mensaje</h2>
-                <div class="section-divider"></div>
-                <p class="section-description">Estamos aquí para responder a tus preguntas</p>
-            </div>
-            
-            <div class="form-container" data-aos="fade-up" data-aos-delay="200">
-                <form id="contactForm" class="contact-form-content">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Nombre Completo</label>
-                            <input type="text" id="name" name="name" required>
+            <div class="contact-grid">
+                <div class="contact-info-detailed">
+                    <h2>Información de Contacto</h2>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Dirección</h3>
+                            <p>Keystone Ln, Berryville, VA 22611</p>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Correo Electrónico</label>
-                            <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p>-------</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>contacto@oasisfamilychurch.com</p>
                         </div>
                     </div>
                     
-                    <div class="form-row">
+                    <div class="social-section">
+                        <h3>Síguenos en redes sociales</h3>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/profile.php?id=100049261278326&mibextid=wwXIfr&mibextid=wwXIfr" target="_blank" class="social-link">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="http://www.youtube.com/@OasisFamilyChurchWinchesterVA" target="_blank" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="map-section">
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3087.3!2d-77.9!3d39.1!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b5f115a5c5f8f9%3A0x4f0d0b0f0d0b0f0d!2sKeystone%20Ln%2C%20Berryville%2C%20VA%2022611!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                
+                <div class="contact-form-section">
+                    <h2>Envíanos un Mensaje</h2>
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">Nombre</label>
+                                <input type="text" id="first-name" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Apellido</label>
+                                <input type="text" id="last-name" placeholder="Tu apellido" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="tu@email.com" required>
+                        </div>
+                        
                         <div class="form-group">
                             <label for="phone">Teléfono</label>
-                            <input type="tel" id="phone" name="phone">
+                            <input type="tel" id="phone" placeholder="Tu número de teléfono">
                         </div>
                         
                         <div class="form-group">
-                            <label for="subject">Asunto</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Mensaje</label>
-                        <textarea id="message" name="message" rows="6" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn-primary">
-                        <i class="fas fa-paper-plane"></i> Enviar Mensaje
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Prayer Request Section -->
-    <section class="prayer-request section-padding">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-subtitle">Oración</span>
-                <h2 class="section-title">Petición de Oración</h2>
-                <div class="section-divider"></div>
-                <p class="section-description">Nos encantaría orar por ti</p>
-            </div>
-            
-            <div class="prayer-content" data-aos="fade-up" data-aos-delay="200">
-                <div class="prayer-text">
-                    <h3>Estamos Aquí Para Orar Contigo</h3>
-                    <p>En Oasis Family Church, creemos en el poder de la oración. Si tienes una necesidad, preocupación o motivo de agradecimiento, nos encantaría orar por ti. Puedes enviar tu petición de oración a través del formulario y nuestro equipo de oración intercederá por ti.</p>
-                    <p>Todas las peticiones son confidenciales y solo serán compartidas con nuestro equipo de oración.</p>
-                </div>
-                
-                <div class="prayer-form">
-                    <form id="prayerForm">
-                        <div class="form-group">
-                            <label for="prayerName">Nombre (Opcional)</label>
-                            <input type="text" id="prayerName" name="prayerName">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" placeholder="¿Cómo podemos ayudarte?" rows="5" required></textarea>
                         </div>
                         
-                        <div class="form-group">
-                            <label for="prayerEmail">Correo Electrónico (Opcional)</label>
-                            <input type="email" id="prayerEmail" name="prayerEmail">
-                            <small>Si deseas recibir seguimiento</small>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="prayerRequest">Petición de Oración</label>
-                            <textarea id="prayerRequest" name="prayerRequest" rows="6" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn-primary">
-                            <i class="fas fa-pray"></i> Enviar Petición
-                        </button>
+                        <button type="submit" class="btn-primary">Enviar Mensaje</button>
                     </form>
+                    
+                    <div class="new-visitor-box">
+                        <h3>¿Eres nuevo en nuestra iglesia?</h3>
+                        <p>Si eres nuevo en nuestra iglesia, nos encantaría conocerte mejor. Completa nuestro formulario para nuevos visitantes y te daremos la bienvenida personalmente.</p>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfGoFW0Za8zg1ouMelwI6BVl6x2eyvFBe6a7uT-ThBmHmTznQ/viewform?usp=sharing" target="_blank" class="btn-primary">Formulario para Nuevos Visitantes</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -236,97 +128,62 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="footer-grid">
-                    <div class="footer-info">
-                        <div class="footer-logo">
-                            <img src="oasis_logo_website.jpg" alt="Oasis Family Church Logo">
-                        </div>
-                        <p>Oasis Family Church es un lugar de esperanza, sanidad y comunidad donde puedes experimentar el amor de Dios y crecer en tu fe.</p>
-                        <div class="footer-social">
-                            <a href="#" class="social-link" title="Facebook">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" class="social-link" title="Instagram">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#" class="social-link" title="YouTube">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                            <a href="#" class="social-link" title="Twitter">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>Oasis Family Church</h3>
+                    <p>Una iglesia de milagros donde experimentarás el amor de Dios y serás parte de nuestra familia.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100049261278326&mibextid=wwXIfr&mibextid=wwXIfr" target="_blank" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="http://www.youtube.com/@OasisFamilyChurchWinchesterVA" target="_blank" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
                     </div>
-                    
-                    <div class="footer-links">
-                        <h3>Enlaces Rápidos</h3>
-                        <ul>
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="nosotros.html">Nosotros</a></li>
-                            <li><a href="servicios.html">Servicios</a></li>
-                            <li><a href="eventos.html">Eventos</a></li>
-                            <li><a href="conecta.html">Conecta</a></li>
-                            <li><a href="contacto.html">Contacto</a></li>
-                        </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Horarios de Servicios</h3>
+                    <p>Domingos: 3:00 PM</p>
+                    <p>Martes (Jóvenes): 7:00 PM</p>
+                    <p>Viernes (Intercesión): 7:00 PM</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contáctanos</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Keystone Ln, Berryville, VA 22611</p>
                     </div>
-                    
-                    <div class="footer-links">
-                        <h3>Ministerios</h3>
-                        <ul>
-                            <li><a href="#">Niños</a></li>
-                            <li><a href="#">Jóvenes</a></li>
-                            <li><a href="#">Adultos</a></li>
-                            <li><a href="#">Matrimonios</a></li>
-                            <li><a href="#">Misiones</a></li>
-                            <li><a href="#">Adoración</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer-contact">
-                        <h3>Contacto</h3>
-                        <ul>
-                            <li>
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Keystone Ln, Berryville, VA 22611</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-phone-alt"></i>
-                                <span>(555) 123-4567</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-envelope"></i>
-                                <span>info@oasisfamilychurch.com</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-clock"></i>
-                                <span>Lun - Vie: 9:00 AM - 5:00 PM</span>
-                            </li>
-                        </ul>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>-------</p>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="copyright">
-                    <p>&copy; 2025 Oasis Family Church. Todos los derechos reservados.</p>
-                </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Oasis Family Church. Todos los derechos reservados.</p>
             </div>
         </div>
-        
-        <!-- Back to Top Button -->
-        <a href="#" class="back-to-top">
-            <i class="fas fa-chevron-up"></i>
-        </a>
     </footer>
 
-    <!-- AOS Animation Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    
-    <!-- Custom JS -->
     <script src="script.js"></script>
+    <!-- Añadir clases de animación a elementos específicos -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Añadir clases de animación a elementos en la página de contacto
+            const pageTitle = document.querySelector('.page-title h1');
+            if (pageTitle) pageTitle.classList.add('fade-in-down');
+            
+            const contactInfo = document.querySelector('.contact-info-detailed');
+            if (contactInfo) contactInfo.classList.add('fade-in-left');
+            
+            const contactForm = document.querySelector('.contact-form-section');
+            if (contactForm) contactForm.classList.add('fade-in-right');
+            
+            const newVisitorBox = document.querySelector('.new-visitor-box');
+            if (newVisitorBox) newVisitorBox.classList.add('fade-in-up', 'animate-delay-3');
+        });
+    </script>
 </body>
 </html>
+

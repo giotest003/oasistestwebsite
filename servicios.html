@@ -4,205 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios - Oasis Family Church</title>
-    <meta name="description" content="Conoce nuestros horarios de servicio y actividades en Oasis Family Church.">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- AOS Animation Library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="loader"></div>
-    </div>
-
-    <!-- Header -->
-    <header id="header">
+    <!-- Navegación -->
+    <header class="header">
         <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="oasis_logo_website.jpg" alt="Oasis Family Church Logo">
-                </a>
-            </div>
-            
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">Inicio</a></li>
-                    <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
-                    <li><a href="servicios.html" class="nav-link active">Servicios</a></li>
-                    <li><a href="eventos.html" class="nav-link">Eventos</a></li>
-                    <li><a href="conecta.html" class="nav-link">Conecta</a></li>
-                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
-                    <li class="nav-cta"><a href="nuevo-visitante.html" class="btn-primary">Soy Nuevo</a></li>
-                </ul>
-                
-                <div class="mobile-nav-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">Oasis Family Church</a>
                 </div>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="page-header-overlay"></div>
-        <div class="container">
-            <div class="page-header-content">
-                <h1>Nuestros Servicios</h1>
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <!-- Solo mostramos la página actual -->
-                        <li class="breadcrumb-item active" aria-current="page">Servicios</li>
-                    </ol>
+                <div class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav class="nav-menu" id="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="servicios.html" class="active">Servicios</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfGoFW0Za8zg1ouMelwI6BVl6x2eyvFBe6a7uT-ThBmHmTznQ/viewform?usp=sharing" target="_blank" class="btn-primary">Soy Nuevo</a></li>
+                    </ul>
                 </nav>
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- Services Section -->
-    <section class="services section-padding">
+    <!-- Título de la página -->
+    <section class="page-title">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-subtitle">Horarios</span>
-                <h2 class="section-title">Nuestros Servicios</h2>
-                <div class="section-divider"></div>
-                <p class="section-description">Únete a nosotros para adorar y crecer juntos</p>
-            </div>
-            
-            <div class="services-grid">
-                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-icon">
-                        <i class="fas fa-church"></i>
-                    </div>
-                    <h3>Servicio Dominical</h3>
-                    <div class="service-time">
-                        <i class="far fa-clock"></i>
-                        <span>10:00 AM - 11:30 AM</span>
-                    </div>
-                    <p>Adoración contemporánea, oración y mensaje relevante para toda la familia.</p>
-                    <div class="service-features">
-                        <span><i class="fas fa-check"></i> Ministerio de Niños</span>
-                        <span><i class="fas fa-check"></i> Traducción al Español</span>
-                        <span><i class="fas fa-check"></i> Café y Comunión</span>
-                    </div>
-                </div>
-                
-                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-icon">
-                        <i class="fas fa-book-open"></i>
-                    </div>
-                    <h3>Estudio Bíblico</h3>
-                    <div class="service-time">
-                        <i class="far fa-clock"></i>
-                        <span>Miércoles 7:00 PM - 8:30 PM</span>
-                    </div>
-                    <p>Enseñanza bíblica profunda para crecer en conocimiento y fe.</p>
-                    <div class="service-features">
-                        <span><i class="fas fa-check"></i> Grupos de Discusión</span>
-                        <span><i class="fas fa-check"></i> Oración</span>
-                        <span><i class="fas fa-check"></i> Compañerismo</span>
-                    </div>
-                </div>
-                
-                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Grupo de Jóvenes</h3>
-                    <div class="service-time">
-                        <i class="far fa-clock"></i>
-                        <span>Viernes 6:30 PM - 8:00 PM</span>
-                    </div>
-                    <p>Un espacio dinámico para adolescentes y jóvenes de 13-18 años.</p>
-                    <div class="service-features">
-                        <span><i class="fas fa-check"></i> Juegos y Actividades</span>
-                        <span><i class="fas fa-check"></i> Mensajes Relevantes</span>
-                        <span><i class="fas fa-check"></i> Mentoreo</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="location-info" data-aos="fade-up" data-aos-delay="400">
-                <div class="location-icon">
-                    <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <h3>Nuestra Ubicación</h3>
-                <p>Keystone Ln, Berryville, VA 22611</p>
-                <a href="https://maps.google.com/?q=Keystone+Ln,+Berryville,+VA+22611" target="_blank" class="btn-secondary">
-                    <i class="fas fa-directions"></i> Cómo Llegar
-                </a>
-            </div>
+            <h1>Nuestros Servicios</h1>
         </div>
     </section>
 
-    <!-- Ministries Section -->
-    <section class="ministries section-padding section-bg">
+    <!-- Servicios Detallados -->
+    <section class="detailed-services section">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-subtitle">Ministerios</span>
-                <h2 class="section-title">Nuestros Ministerios</h2>
-                <div class="section-divider"></div>
-                <p class="section-description">Descubre cómo puedes crecer y servir en nuestra comunidad</p>
+            <div class="service-detailed">
+                <h2>Servicio Dominical</h2>
+                <div class="service-time">
+                    <i class="fas fa-clock"></i>
+                    <p>Domingos a las 3:00 PM</p>
+                </div>
+                <p>Nuestro servicio principal de la semana donde toda la familia se reúne para adorar a Dios, experimentar Su presencia y recibir un mensaje poderoso de la Palabra de Dios.</p>
+                <p>Cada domingo es una oportunidad para:</p>
+                <ul>
+                    <li>Participar en un tiempo de adoración y júbilo</li>
+                    <li>Escuchar un mensaje relevante de la Biblia</li>
+                    <li>Conectar con otros creyentes</li>
+                    <li>Experimentar el poder transformador de Dios</li>
+                </ul>
+                <div class="service-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Keystone Ln, Berryville, VA 22611</p>
+                </div>
             </div>
-            
-            <div class="ministries-grid">
-                <div class="ministry-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="ministry-img">
-                        <img src="https://via.placeholder.com/600x400/f5f5f5/0d47a1?text=NIÑOS" alt="Ministerio de Niños">
-                    </div>
-                    <div class="ministry-content">
-                        <h3>Ministerio de Niños</h3>
-                        <p>Creamos un ambiente divertido y seguro donde los niños pueden aprender sobre el amor de Dios de manera creativa y apropiada para su edad.</p>
-                        <a href="#" class="btn-text">Más Información <i class="fas fa-arrow-right"></i></a>
-                    </div>
+
+            <div class="service-detailed">
+                <h2>Estudio Bíblico Juvenil</h2>
+                <div class="service-time">
+                    <i class="fas fa-clock"></i>
+                    <p>Martes a las 7:00 PM</p>
                 </div>
-                
-                <div class="ministry-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="ministry-img">
-                        <img src="https://via.placeholder.com/600x400/f5f5f5/0d47a1?text=JÓVENES" alt="Ministerio de Jóvenes">
-                    </div>
-                    <div class="ministry-content">
-                        <h3>Ministerio de Jóvenes</h3>
-                        <p>Un espacio donde los adolescentes y jóvenes pueden conectar con otros, crecer en su fe y descubrir su propósito en un ambiente relevante.</p>
-                        <a href="#" class="btn-text">Más Información <i class="fas fa-arrow-right"></i></a>
-                    </div>
+                <p>Un espacio dedicado a nuestros jóvenes donde pueden crecer en su fe, hacer preguntas, estudiar la Biblia y desarrollar amistades significativas con otros jóvenes cristianos.</p>
+                <p>Nuestro ministerio juvenil se enfoca en:</p>
+                <ul>
+                    <li>Enseñanza bíblica relevante para la vida diaria</li>
+                    <li>Actividades dinámicas y participativas</li>
+                    <li>Desarrollo de liderazgo</li>
+                    <li>Compañerismo y amistad</li>
+                </ul>
+                <div class="service-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Keystone Ln, Berryville, VA 22611</p>
                 </div>
-                
-                <div class="ministry-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="ministry-img">
-                        <img src="https://via.placeholder.com/600x400/f5f5f5/0d47a1?text=MATRIMONIOS" alt="Ministerio de Matrimonios">
-                    </div>
-                    <div class="ministry-content">
-                        <h3>Ministerio de Matrimonios</h3>
-                        <p>Fortalecemos matrimonios a través de enseñanzas prácticas, eventos especiales y grupos de apoyo para construir relaciones sólidas.</p>
-                        <a href="#" class="btn-text">Más Información <i class="fas fa-arrow-right"></i></a>
-                    </div>
+            </div>
+
+            <div class="service-detailed">
+                <h2>Intercesión</h2>
+                <div class="service-time">
+                    <i class="fas fa-clock"></i>
+                    <p>Viernes a las 7:00 PM</p>
                 </div>
-                
-                <div class="ministry-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="ministry-img">
-                        <img src="https://via.placeholder.com/600x400/f5f5f5/0d47a1?text=ADORACIÓN" alt="Ministerio de Adoración">
-                    </div>
-                    <div class="ministry-content">
-                        <h3>Ministerio de Adoración</h3>
-                        <p>Nuestro equipo de adoración lidera a la congregación en una experiencia de adoración auténtica y poderosa cada semana.</p>
-                        <a href="#" class="btn-text">Más Información <i class="fas fa-arrow-right"></i></a>
-                    </div>
+                <p>Un tiempo dedicado a la oración e intercesión por las necesidades de nuestra iglesia, comunidad y nación. Creemos en el poder de la oración para transformar vidas y situaciones.</p>
+                <p>Durante nuestro servicio de intercesión:</p>
+                <ul>
+                    <li>Oramos por necesidades específicas</li>
+                    <li>Intercedemos por nuestra comunidad y líderes</li>
+                    <li>Buscamos la dirección de Dios para nuestra iglesia</li>
+                    <li>Experimentamos la presencia de Dios a través de la oración</li>
+                </ul>
+                <div class="service-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Keystone Ln, Berryville, VA 22611</p>
                 </div>
             </div>
         </div>
@@ -210,97 +105,57 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="footer-grid">
-                    <div class="footer-info">
-                        <div class="footer-logo">
-                            <img src="oasis_logo_website.jpg" alt="Oasis Family Church Logo">
-                        </div>
-                        <p>Oasis Family Church es un lugar de esperanza, sanidad y comunidad donde puedes experimentar el amor de Dios y crecer en tu fe.</p>
-                        <div class="footer-social">
-                            <a href="#" class="social-link" title="Facebook">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" class="social-link" title="Instagram">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#" class="social-link" title="YouTube">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                            <a href="#" class="social-link" title="Twitter">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>Oasis Family Church</h3>
+                    <p>Una iglesia de milagros donde experimentarás el amor de Dios y serás parte de nuestra familia.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100049261278326&mibextid=wwXIfr&mibextid=wwXIfr" target="_blank" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="http://www.youtube.com/@OasisFamilyChurchWinchesterVA" target="_blank" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
                     </div>
-                    
-                    <div class="footer-links">
-                        <h3>Enlaces Rápidos</h3>
-                        <ul>
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="nosotros.html">Nosotros</a></li>
-                            <li><a href="servicios.html">Servicios</a></li>
-                            <li><a href="eventos.html">Eventos</a></li>
-                            <li><a href="conecta.html">Conecta</a></li>
-                            <li><a href="contacto.html">Contacto</a></li>
-                        </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Horarios de Servicios</h3>
+                    <p>Domingos: 3:00 PM</p>
+                    <p>Martes (Jóvenes): 7:00 PM</p>
+                    <p>Viernes (Intercesión): 7:00 PM</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contáctanos</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Keystone Ln, Berryville, VA 22611</p>
                     </div>
-                    
-                    <div class="footer-links">
-                        <h3>Ministerios</h3>
-                        <ul>
-                            <li><a href="#">Niños</a></li>
-                            <li><a href="#">Jóvenes</a></li>
-                            <li><a href="#">Adultos</a></li>
-                            <li><a href="#">Matrimonios</a></li>
-                            <li><a href="#">Misiones</a></li>
-                            <li><a href="#">Adoración</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer-contact">
-                        <h3>Contacto</h3>
-                        <ul>
-                            <li>
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Keystone Ln, Berryville, VA 22611</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-phone-alt"></i>
-                                <span>(555) 123-4567</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-envelope"></i>
-                                <span>info@oasisfamilychurch.com</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-clock"></i>
-                                <span>Lun - Vie: 9:00 AM - 5:00 PM</span>
-                            </li>
-                        </ul>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>-------</p>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="copyright">
-                    <p>&copy; 2025 Oasis Family Church. Todos los derechos reservados.</p>
-                </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Oasis Family Church. Todos los derechos reservados.</p>
             </div>
         </div>
-        
-        <!-- Back to Top Button -->
-        <a href="#" class="back-to-top">
-            <i class="fas fa-chevron-up"></i>
-        </a>
     </footer>
 
-    <!-- AOS Animation Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    
-    <!-- Custom JS -->
     <script src="script.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Añadir clases de animación a elementos en la página de servicios
+        const pageTitle = document.querySelector('.page-title h1');
+        if (pageTitle) pageTitle.classList.add('fade-in-down');
+        
+        const serviceCards = document.querySelectorAll('.service-detailed');
+        serviceCards.forEach((card, index) => {
+            card.classList.add('fade-in-up', `animate-delay-${index + 1}`);
+        });
+    });
+</script>
 </body>
 </html>
+
